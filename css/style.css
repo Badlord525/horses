@@ -1,0 +1,401 @@
+html{
+    box-sizing: border-box;
+}
+
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul[class]{
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+a{
+    text-decoration: none;
+    color: #202020;
+    ;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #242121;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+.header {
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.menu {
+    margin-left: auto;
+    margin-right: 57px;
+}
+.header-list {
+    display: flex;
+}
+.header-list__item {
+    margin: 0 10px;
+}
+.header-list__link {
+    font-size: 16px;
+    text-transform:uppercase;
+    font-weight: 400;
+    padding-bottom: 5px;
+    transition: all .3s;
+}
+.header-list__link:hover {
+    border-bottom: 1px solid #008139;
+}
+.contacts-tel {
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+}
+.contacts-text {
+    font-size: 13px;
+    color:  #7D808A;
+}
+.contacts-tel::before {
+    content: url('../images/tel.svg');
+    position: absolute;
+    left: -20px;
+    top: 3px;
+}
+.header-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+.header-left {
+    max-width: 620px;
+}
+.header-left__title {
+    font-family: 'Philosopher';
+    font-weight: 700;
+    font-size: 54px;
+    margin-bottom: 40px;
+}
+.header-left__text {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    padding-left: 15px;
+}
+.header-left__btn {
+    border: none;
+    border-radius: 5px;
+    background-color:  #009000;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 20px 70px;
+    cursor: pointer;
+}
+.header-left__btn:hover {
+    background-color: #008139;
+}
+.club {
+    padding-bottom: 185px;
+}
+.other-title {
+    font-family: 'Philosopher';
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+.club_title {
+    margin-bottom: 70px;
+}
+.club-item {
+    display: flex;
+
+}
+.club-img {
+    max-width: 585px;
+}
+.club-right__top {
+    display: flex;
+    flex-wrap: wrap;
+}
+.club__top {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+.club__top-title {
+    font-family: 'Philosopher';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 60px;
+    color:#008139;
+}
+.club__top-text {
+    font-weight: 700;
+    font-size: 17px;
+}
+.club-right__bottom {
+    max-width: 570px;
+    line-height: 22px;
+}
+.club__bottom {
+    color: #7E7E7E;
+
+
+}
+.rec {
+    margin-bottom: 200px;
+}
+.rec-top__title{
+    margin-bottom: 70px;
+}
+.rec__items {
+    display: flex;
+    justify-content: space-between;
+}
+.rec__item {
+    max-width: 290px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.rec__item-title {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 22px;
+    margin: 30px 0;
+}
+.rec__item-text {
+    color: #7E7E7E;
+}
+.rec__item-images {
+    display: flex;
+    justify-content: center;
+}
+.horse {
+    background-image: url('../images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; 
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+.horse-top {
+    padding-top: 40px;
+    margin-bottom: 75px;
+}
+.horse__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px ;
+    margin-bottom: 50px; 
+}
+.horse__item {
+    max-width: 370px;
+    background-color: #fff;
+    position: relative;
+    padding: 40px 40px 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.horse__item:hover {
+    box-shadow:5px 5px 5px #EAEAEA;
+    border-radius: 5px;
+}
+.horse__img {
+   content: '';
+   position: absolute;
+   top: -26px;
+   left: 26px;
+}
+.horse__item-title {
+    padding-top: 210px;
+    font-size: 23px;
+    font-weight: 700;
+    padding-bottom: 25px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #008139;
+}
+.horse__item-text {
+    color:#7E7E7E;
+}
+.horse__button {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.slider {
+    margin-bottom: 100px;
+    position: relative;
+}
+.slider-top {
+    margin-top: 40px;
+    padding-bottom: 70px;
+}
+.slider__img {
+    padding: 0 10px;
+}
+.slick-arrow {
+    border: none;
+    background-color: #fff;
+    font-size: 0;
+    height: 40px;
+    width: 40px;
+}
+.slick-prev {
+    position: absolute;
+    top: -50px;
+    right: 50px;
+    background-color:#FFC700;
+    background-image: url("../images/Vector-pre.svg");
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center center; 
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slick-next {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background-color:#FFC700;
+    background-image: url("../images/Vector-ne.svg");
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center center; 
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider-horse {
+    padding-bottom: 100px;
+}
+.slider__horse-top{
+    margin-bottom: 70px;
+}
+.horses__item {
+    margin: 0 15px;
+    max-width: 370px;
+    background-color: #EAEAEA;
+    text-align: center;
+    border-radius: 5px;
+}
+.horses__item-img {
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.horses__item-title {
+    font-size: 23px;
+    margin-bottom: 50px;
+}
+.horses__item-text {
+    color:#7E7E7E;
+    margin-bottom: 40px;
+}
+.girl {
+    background-image: url("../images/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 140px 0 100px;
+}
+.form {
+    text-align: center;
+    margin-left: 50%;
+    max-width: 470px;
+    padding: 60px 40px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.form__title {
+    font-size: 35px;
+    font-family: 'Philosopher';
+    margin-bottom: 10px;
+}
+.form__text {
+    line-height: 21px;
+    color: #7E7E7E;
+    margin-bottom: 30px;
+}
+.form__use {
+    width: 330px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-color: #8F8F8F;
+}
+.form__submit {
+    border: none;
+    background-color: #FFC700;
+    cursor: pointer;
+}
+.footer {
+    background-color: #0B0B0B;
+    padding: 60px 0;
+}
+.footer__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__list {
+    display: flex;
+}
+.footer__li + .footer__li {
+    margin-left: 15px;
+}
+.footer__link {
+    color: #EAEAEA;
+    font-size: 13px;
+}
